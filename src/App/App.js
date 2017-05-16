@@ -62,11 +62,11 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h2>Quiz App</h2>
+        <h1 className="Header">Quiz App</h1>
 
         {/* if statement */}
         {this.state.progress < this.quiz_data.length ? (
-          <div>
+          <div className="Questions">
             <Question current_question={this.quiz_data[this.state.progress].question} />
             <ProgressBar current_step={this.state.progress + 1} question_length={this.quiz_data.length} />
             <MultiChoice
