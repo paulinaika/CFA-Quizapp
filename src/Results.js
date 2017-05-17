@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Results extends Component {
   render (){
@@ -11,6 +12,17 @@ class Results extends Component {
       </div>
     )
   }
+}
+
+Results.propTypes = {
+  end_message: PropTypes.string, //referencing the library proptype
+  score: PropTypes.number.isRequired,
+  handleRestart: PropTypes.func.isRequired
+};
+
+
+Results.defaultProps = {
+  end_message: "Congratulations!!"
 }
 
 export default Results;
