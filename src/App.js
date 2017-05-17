@@ -4,6 +4,7 @@ import Question from './Question';
 import ProgressBar from './ProgressBar';
 import MultiChoice from './MultiChoice';
 import Results from './Results';
+import { Line } from 'rc-progress';
 
 
 class App extends Component {
@@ -22,6 +23,11 @@ class App extends Component {
         question: 'What is the meaning of life?',
         correct_answer: '42',
         possible_answers: ['Love', 'Money', 'JavaScript', '42']
+      },
+      {
+        question: 'Who is the best coding YouTuber?',
+        correct_answer: 'FunFunFunction',
+        possible_answers: ['Coding Train', 'FunFunFunction', 'Young Lamb', 'Wes Bos']
       },
       {
         question: 'Who is the best coding YouTuber?',
@@ -70,6 +76,7 @@ class App extends Component {
           <div className="Questions">
             <Question current_question={this.quiz_data[this.state.progress].question} />
             <ProgressBar current_step={this.state.progress + 1} question_length={this.quiz_data.length} />
+            <Line percent={(this.state.progress + 1)/this.quiz_data.length*100} strokeWidth="4" strokeColor="#26a69a" />
             <MultiChoice
               answers={this.quiz_data[this.state.progress].possible_answers}
               updateSelected={this.updateSelected}
