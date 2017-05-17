@@ -5,6 +5,7 @@ import ProgressBar from './ProgressBar';
 import MultiChoice from './MultiChoice';
 import Results from './Results';
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -53,11 +54,11 @@ class App extends Component {
 
   handleRestart(){
     this.setState({
-      score: 0,
-      progress: 0
+      progress: 0,
+      selected: 'None yet!',
+      score: 0
     })
   }
-
 
   render() {
     return (

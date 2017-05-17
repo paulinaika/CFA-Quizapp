@@ -27,7 +27,7 @@ it('handleRestart() reset quiz state', () => {
 
   expect(component.instance().setState).toHaveBeenCalledWith({
     progress: 0,
-    selected: 'None Yet',
+    selected: 'None yet!',
     score: 0
   });
 });
