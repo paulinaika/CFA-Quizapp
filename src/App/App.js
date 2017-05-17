@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Question from './Question';
-import ProgressBar from './ProgressBar';
-import MultiChoice from './MultiChoice';
-import Results from './Results';
+import Question from '../Question/Question';
+import ProgressBar from '../ProgressBar/ProgressBar';
+import MultiChoice from '../MultiChoice/MultiChoice';
+import Results from '../Results/Results';
 import { Line } from 'rc-progress';
 
 

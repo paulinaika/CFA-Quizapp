@@ -30,14 +30,3 @@
 .Questions{
   color: #47b8e0;
 }
-
-.Button{
-  text-decoration: none;
-  color: #fff;
-  background-color: #26a69a;
-  text-align: center;
-  letter-spacing: .5px;
-  transition: .2s ease-out;
-  cursor: pointer;
-  border-radius: 2px;
-}
