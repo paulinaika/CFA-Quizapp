@@ -20,19 +20,24 @@ class App extends Component {
     this.handleRestart = this.handleRestart.bind(this);
     this.quiz_data = [
       {
-        question: 'What is the meaning of life?',
-        correct_answer: '42',
-        possible_answers: ['Love', 'Money', 'JavaScript', '42']
+        question: 'Which variable below uses acceptable naming convention?',
+        correct_answer: 'my_cat',
+        possible_answers: ['Cat', 'My-CaT', 'my-cat', 'my_cat']
       },
       {
-        question: 'Who is the best coding YouTuber?',
-        correct_answer: 'FunFunFunction',
-        possible_answers: ['Coding Train', 'FunFunFunction', 'Young Lamb', 'Wes Bos']
+        question: 'What is it called when a variable is provided a value?',
+        correct_answer: 'Assignment',
+        possible_answers: ['assignment', 'assessment', 'declaration', 'version control']
       },
       {
-        question: 'Who is the best coding YouTuber?',
-        correct_answer: 'FunFunFunction',
-        possible_answers: ['Coding Train', 'FunFunFunction', 'Young Lamb', 'Wes Bos']
+        question: 'What is the keyword we use to define a method in Ruby?',
+        correct_answer: 'def',
+        possible_answers: ['definitely', 'def', 'define', 'return']
+      },
+      {
+        question: 'What are the inputs inside () after you define your method?',
+        correct_answer: 'Parameters',
+        possible_answers: ['arguments', 'outputs', 'inputs', 'parameters']
       }
     ]
   }

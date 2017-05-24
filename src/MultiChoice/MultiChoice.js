@@ -11,7 +11,7 @@ class MultiChoice extends Component {
         {this.props.answers.map((answer, i) =><Button key={i}onClick={() => this.props.updateSelected(answer)}>{answer}</Button>)}
         <br />
         <p>You have selected: {this.props.selectedAnswer}</p>
-          <Button bsClass="submit" onClick={this.props.handleSubmit}>Submit</Button>
+          <Button bsStyle="info" onClick={this.props.handleSubmit}>Submit</Button>
       </div>
     )
   }
